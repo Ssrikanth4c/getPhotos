@@ -3,6 +3,11 @@
     text-align: center;
     padding-top:80px ;
     padding-bottom: 10px;
+    box-shadow: 
+       inset 0 -3em 3em rgba(0,0,0,0.1), 
+             0 0  0 2px rgb(255, 255, 255),
+             0.3em 0.3em 1em rgba(109, 187, 187, 0.3);
+    border-radius: 15px 5px;
 }
 input{
     padding: 10px;
@@ -16,4 +21,20 @@ input{
 .pagination{
     text-align: center;
     margin: 20px 0;
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .imageBox{
+        margin: 0 100px;
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .imageBox{
+        margin: 0;
+    }   
 }

@@ -1,4 +1,4 @@
-api_key='563492ad6f91700001000001a9fc8099f7244dbebb8a85d0e88b89d0'
+import api_key from './api_key';
 let bearer = 'Bearer ' + api_key;
 const searchResult=quary=>
 {
@@ -45,6 +45,7 @@ const renderData=(data)=>{
         let imgTag=document.createElement('img')
         imgTag.setAttribute('src', img.src.large)
         imgTag.setAttribute('alt', img.photographer)
+        imgTag.setAttribute('title', img.photographer)
         imgTag.setAttribute('width', 250)
         imgTag.setAttribute('height', 300)
         imgTag.setAttribute('style', 'margin:10px')
