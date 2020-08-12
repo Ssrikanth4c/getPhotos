@@ -7,7 +7,24 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <p>get Photos</p>    
+          <div class="container">
+              <div class="searchBox">
+                  <input 
+                    type="search" 
+                    name="search" 
+                    id="searchId"
+                    placeholder="search Images here!"
+                    autocomplete="false"
+                   >
+                  
+              </div>
+              <div class="imageBox" id='displayId'></div>
+              <!-- pagination -->
+              <div class="pagination">
+                  <button type="submit">prev</button>
+                  <button type="submit">next</button>
+              </div>
+          </div>
         <script src="script.js"></script>
     </body>
 </html>
